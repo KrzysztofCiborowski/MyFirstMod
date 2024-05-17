@@ -1,6 +1,7 @@
 package net.ILikePie.myfirstmod;
 
 import com.mojang.logging.LogUtils;
+import net.ILikePie.myfirstmod.block.ModBlocks;
 import net.ILikePie.myfirstmod.item.ModCreativeModTabs;
 import net.ILikePie.myfirstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class MyFirstMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
